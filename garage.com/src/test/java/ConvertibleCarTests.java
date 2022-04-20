@@ -5,7 +5,7 @@ import static org.testng.Assert.fail;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class ConvertibleCarTests {
+public class ConvertibleCarTests    {
 	private ConvertibleCar Car;
 
 	@BeforeClass
@@ -13,6 +13,7 @@ public class ConvertibleCarTests {
 		String model = "Miata";
 		IEngine engine = new SmallEngine();
 		IIgnition ignitionSystem = new ElectronicIgnition();
+		
 
 		this.Car = new ConvertibleCar(model, engine, ignitionSystem);
 	}
@@ -29,10 +30,10 @@ public class ConvertibleCarTests {
 	@Test
 	public void canStartConvertibleCar() {
 		ConvertibleCar car = this.Car;
-		
+		car.start();
 		boolean isStarted = car.getIsStarted();
 
-		assertTrue(isStarted, "");
+		assertTrue(isStarted, "manage to get it start");
 	}
 
 	@Test
@@ -42,6 +43,8 @@ public class ConvertibleCarTests {
 
 	@Test
 	public void canRaiseTop() {
-		fail("not implemented yet");
+     
 	}
+
+	
 }

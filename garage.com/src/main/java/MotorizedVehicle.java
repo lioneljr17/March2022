@@ -22,4 +22,5 @@ public abstract class MotorizedVehicle {
 	public String getModel() {
 		return this.model;
 	}
+	
 }

@@ -27,9 +27,10 @@ public class CarTests {
 	@Test
 	public void canStartCar() {
 		Car car = this.Car;
+		Car.start();
 
 		boolean isStarted = car.getIsStarted();
 
-		assertTrue(isStarted, "");
+		assertTrue(isStarted, "manage to get it start");
 	}
 }

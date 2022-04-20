@@ -1,6 +1,6 @@
 public abstract class EngineBase implements IEngine {
 	protected int cylinderCount;
-	private boolean isStarted;
+	 boolean isStarted;
 
 	public void start() {
 		this.isStarted = true;
