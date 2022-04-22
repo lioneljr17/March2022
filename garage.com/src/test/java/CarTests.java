@@ -21,7 +21,7 @@ public class CarTests {
 
 		String actualModel = car.getModel();
 
-		assertEquals(actualModel, Car.getModel() , "");
+		assertEquals(actualModel, Car.getModel() , "both should the same car model");
 	}
 
 	@Test

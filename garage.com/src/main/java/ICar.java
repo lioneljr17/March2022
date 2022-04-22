@@ -5,4 +5,6 @@ public interface ICar {
 	public String getModel();
 	void top();
 	boolean TopIsUp();
+	void TOP();
+	boolean TopIsdown();
 }

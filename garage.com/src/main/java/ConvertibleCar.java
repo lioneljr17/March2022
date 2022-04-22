@@ -1,17 +1,25 @@
 public class ConvertibleCar extends Car implements ICar {
-	boolean TopIsLowed;
-	boolean TopIsRaised;
+	boolean TopCanBeLowed;
+	boolean TopCanBeRaised;
+	
 	public ConvertibleCar(String model, IEngine engine, IIgnition ignitionSystem) {
 		super(model, engine, ignitionSystem);
 		
 	}
+	
 	public void top() {
-		this.TopIsRaised = true;		
+		this.TopCanBeLowed = true;	
 	}
-
 	
 	public boolean TopIsUp() {
+		return this.TopCanBeRaised;
+	}
+	
+	public void TOP() {
+		this.TopCanBeRaised = true;
 		
-		return this.TopIsRaised;
+	}
+	public boolean TopIsdown() {	
+		return this.TopCanBeLowed;
 	}
 }

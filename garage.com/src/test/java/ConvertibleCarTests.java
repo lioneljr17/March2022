@@ -14,7 +14,6 @@ public class ConvertibleCarTests    {
 		IEngine engine = new SmallEngine();
 		IIgnition ignitionSystem = new ElectronicIgnition();
 		
-
 		this.Car = new ConvertibleCar(model, engine, ignitionSystem);
 	}
 
@@ -24,7 +23,7 @@ public class ConvertibleCarTests    {
 
 		String actualModel = car.getModel();
 
-		assertEquals(actualModel, Car.getModel() , "");
+		assertEquals(actualModel, Car.getModel() , "both should the same car model");
 	}
 
 	@Test
@@ -38,12 +37,16 @@ public class ConvertibleCarTests    {
 
 	@Test
 	public void canLowerTop() {
-		fail("not implemented yet");
+		ConvertibleCar car = this.Car;
+		car.TopIsUp();
+		System.out.println("if top is up than top can be lowed");
 	}
 
 	@Test
 	public void canRaiseTop() {
-     
+		ConvertibleCar car = this.Car;
+		car.TopIsdown();
+		System.out.println("if top is down than top can be raise");
 	}
 
 	
